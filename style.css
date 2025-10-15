@@ -1,46 +1,256 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ======== Police et couleurs de base ======== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0a0e2a, #1a0442);
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* ======== Barre de navigation ======== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 80px;
+  background: transparent;
+}
+
+/* Logo du site */
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Couleur bleu dial .gg */
+.highligh {
+  color: #00bfff;
+}
+
+/* Liens d navigation */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+/* Style des liens */
+.nav-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+
+/* effet dial hover*/
+.nav-links a:hover {
+  color: #00ffff;
+}
 
 
-*{
-    box-sizing:border-box ;
-    margin: 0;
-    padding :0;
-    background-color: #0A0E27;
+.btn-login {
+  background: linear-gradient(90deg, #00bfff, #00ffff);
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+
+.btn-login:hover {
+  opacity: 0.5;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 150px 20px;
+  background: linear-gradient(67deg, #09263f, #34072f);
+}
+
+
+.hero-content {
+  max-width: 800px;
+}
+
+
+.hero h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+
+.accent {
+  color: #00ffff;
+}
+
+
+.hero p {
+  font-size: 1.1rem;
+  color: #aaa;
+  margin-bottom: 40px;
+}
+
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+.btn-primary {
+  background: linear-gradient(90deg, #00bfff, #00ffff);
+  padding: 12px 28px;
+  border-radius: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+
+.btn-primary:hover {
+  opacity: 0.8;
+}
+
+
+.btn-secondary {
+  border: 2px solid #00ffff;
+  padding: 12px 28px;
+  border-radius: 10px;
+  color: #00ffff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+
+.btn-secondary:hover {
+  background: rgba(0, 255, 255, 0.1);
+}
+
+.promo {
+  text-align: center;
+  background-color: #0a0e2a; 
+  padding: 60px 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Titre principal section promo */
+.promo h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+/* Mots as en bleu c */
+.promo .accent {
+  color: #00ffff;
+}
+
+
+.game-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+
+.game-logos img {
+  width: 40px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+
+.game-logos img:hover {
+  transform: scale(1.15);
+}
+
+
+footer{
+    background: #0A0E27F2 ;
+    width: 100%;
+    height: 450px;
+    border-top: solid 0.2px #00ffff82;
 
 }
-li,a,button{
-    font-family: Inter, sans-serif, sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #ffffff;
-    text-decoration: none;
-
-}
-header{
+.footer-content{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
+    justify-content: center;
+    text-align: center;
+    flex-direction:row;
+    margin: 40px;
+
 }
-logo{
+.footer-section ul{
+    list-style: none;
+    text-align: left;
+
+}
+.footer-section a{
+    text-decoration: none;
+    color: #B0B0B0;
+     line-height: 36px;
+     font-size: 14.8px;
+}
+.footer-section p{
+    text-align: left;
+    color: #B0B0B0;
+    font-size: 14.8px;
+    line-height: 28.8px;
+}
+.footer-bottom{
+    text-align: center;
+    color: #B0B0B0;
+    margin-bottom: 32px;
+}
+.footer-bottom p{
+    font-size: 14.8px;
+    margin-bottom: -32px;
+    padding-top: 40px;
+    border-top: solid 1px #00ffffa4;
+}
+
+h4{
+    font-size: 16.9px;
+    color: white;
+    text-align: left;
+}
+.footer-section{
+    margin: 64px 40px 0 40px;
+    line-height: 40px;
+
+}
+footer .logo{
+    text-align: left;
+    margin-bottom: 10px;
+}
+.social-links i{
+    font-size: 38px;
+    color: #00FFFF;
+    padding: 5px 5px;
+    margin-left: 16px;
     cursor: pointer;
 }
-.nav_links{
-    list-style: none;
+.footer-section2{
+    text-align: left;
 }
-.nav_links li {
-    font-display: inline-block;
-    padding: 0px 20px;
-}
-.nav_links li a:hover {
-    color :#ffffff;
-    text-shadow: 0px 1px 10px #00FFFF ;
-}
-button {
-    padding: 9px 25px;
-    background:  linear-gradient(-135deg,#00FFFF,#0099FF);
-    border
-}
-    
-  
