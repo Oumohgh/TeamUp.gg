@@ -184,7 +184,108 @@ body {
 .game-logos img:hover {
   transform: scale(1.15);
 }
+body{
+    background:#0b0e29;
+}
+.players{
+    display: flex;
+     text-align: center;
+     justify-content: space-evenly;
+     flex-wrap: wrap;
+     margin: 20px auto;
+     gap: 30px;
 
+}
+
+.title{
+    text-align: center;
+    font-size:40px;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.line{
+    height: 4px;
+    width: 100px;
+    background: linear-gradient(135deg,#00FFFF,#FF00FF);
+    border-radius: 2px;
+    margin: 20px auto 0 auto;
+}
+
+img{
+    width: 80px;
+    border-radius: 50%; 
+    border: solid 2px ;
+    background: linear-gradient(135deg,#00FFFF ,#0099FF) ;
+    color: transparent;
+    margin: 20px 0 20px 0;
+}
+.players .player{
+    width: 365.34px;
+    height: 326.78px;
+    border: solid 0.5px #00ffff82;
+    border-radius: 16px;
+    background: linear-gradient(64deg, #1A1F3A, #0F1428);
+}
+.username{
+    color: white;
+    font-weight: bold;
+    font-size: 18.9.px;
+    margin-bottom: 10px;
+}
+.game{
+    color: #FF4655;
+    background: #ff465646;
+    padding: 5px;
+    border: solid 0.2px #FF4655;
+    border-radius: 20px;
+    margin: 10px auto;
+    width: 140px; 
+}
+p{
+    font-size: 13.5px;
+    color: #B0B0B0;
+    line-height: 23px;
+    margin: 0 15px;
+}
+
+.formation span{
+    color: #00FFFF;
+    line-height: 23px;
+    font-weight: bold;
+    
+}
+
+.level{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+}
+.butom_profil{
+    background: linear-gradient(-135deg, #00FFFF,#0099FF);
+    color: transparent;
+    color: #0A0E27F2;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 5px #00FFFF;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;   
+    width: 316px;
+    margin-top: 10px;
+}
+.butom_profil:hover{
+    color: #00FFFF;
+    background: #0A0E27F2;
+    box-shadow: white ;
+}
+
+.messi{
+    height: 80px;
+}
 
 footer{
     background: #0A0E27F2 ;
