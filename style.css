@@ -355,3 +355,199 @@ footer .logo{
 .footer-section2{
     text-align: left;
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background: #0A0E27F2 ; */
+    font-family: Inter, sans-serif;
+    letter-spacing: 1px;
+}
+body{
+    background:#0b0e29;
+}
+.players{
+     display: flex;
+     text-align: center;
+     justify-content: space-evenly;
+     flex-wrap: wrap;
+     margin: 20px auto;
+     gap: 30px;
+}
+
+.title{
+    text-align: center;
+    font-size:40px;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.line{
+    height: 4px;
+    width: 100px;
+    background: linear-gradient(135deg,#00FFFF,#FF00FF);
+    border-radius: 2px;
+    margin: 20px auto 0 auto;
+}
+
+img{
+    width: 80px;
+    border-radius: 50%; 
+    border: solid 2px ;
+    box-shadow: 0px 0px 6px #0099FF;
+    background: linear-gradient(135deg,#00FFFF ,#0099FF) ;
+    color: transparent;
+    margin: 20px 0 20px 0;
+}
+.players .player{
+    width: 365.34px;
+    height: 330px;
+    border: solid 0.5px #00ffff82;
+    border-radius: 16px;
+    background: linear-gradient(64deg, #1A1F3A, #0F1428);
+}
+.username{
+    color: white;
+    font-weight: bold;
+    font-size: 18.9.px;
+    margin-bottom: 10px;
+}
+.game1{
+    color: #FF4655;
+    background: #ff465646;
+    padding: 5px;
+    border: solid 0.2px #FF4655;
+    border-radius: 20px;
+    margin: 10px auto;
+    width: 140px; 
+}
+.Legends{
+    background-color: #0095ff33;
+    border: 1px solid #0095ff68;
+    color:#0096FF ;
+    margin: 10px auto;
+    width: 190px;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.CS2{
+    background-color: #ffa60033;
+    border: 1px solid #ffa60067;
+    color: #FFA500;
+    margin: 10px auto;
+    width: 140px;
+    border-radius: 20px;
+    padding: 5px;
+}
+p{
+    font-size: 13.5px;
+    color: #B0B0B0;
+    line-height: 23px;
+    margin: 0 15px;
+}
+
+.formation span{
+    color: #00FFFF;
+    line-height: 23px;
+    font-weight: bold;
+    
+}
+
+.level{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+}
+.butom_profil{
+    background: linear-gradient(-135deg, #00FFFF,#0099FF);
+    color: transparent;
+    color: #0A0E27F2;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 5px #00FFFF;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;   
+    width: 316px;
+    margin-top: 10px;
+}
+#last_one{
+    margin-top: 30px;
+}
+.butom_profil:hover{
+    color: #00FFFF;
+    background: #0A0E27F2;
+    box-shadow: white ;
+}
+/* form search */
+.title_search{
+    display: flex;
+    justify-content: center;
+    margin: 40px auto 32px auto;
+    color: white;
+    
+}
+.form_search{
+    border: solid 0.5px #00ffff82;
+    border-radius: 8px;
+    background: linear-gradient(35deg,#1A1F3A,#0F1428);
+    width: 1160px;
+    margin: 110px auto 110px auto;
+    box-shadow: 1px 0px 6px #1c2452;
+
+}
+.search{
+    display: flex;
+     flex-direction: row; 
+    gap: 20px;
+    justify-content: center; 
+}
+
+._jeux{
+    color: #00FFFF;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align:left;
+}
+.former{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 42px;
+}
+.button{
+    display: flex;
+    align-items: center;
+    margin-bottom: 19px;
+    
+}
+button{
+    width: 252.45px;
+    height: 50px;
+    border-radius: 8px;
+    border: solid 0.5px #00ffff82;
+    background: linear-gradient(to left,#00FFFF,#0099FF);
+    font-weight: bold;
+    cursor: pointer;    
+}
+button:hover{
+    color: #00FFFF;
+    background: #0A0E27F2;
+    
+}
+
+.inputs{
+    width: 252.45px;
+    height: 50px;
+    border: solid 0.5px #00ffff82;
+    border-radius: 8px;
+    background:#0b0e29 ;
+    color: white;
+    text-align:center;
+}
