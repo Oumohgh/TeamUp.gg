@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Publie ton annonce pour recruter des joueurs ou trouver une équipe sur TeamUp.gg.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>TeamUp.gg - Trouve une équipe e-sport , Recrute des joueurs , Plateforme de gaming competitif</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <header class="navbar">
+        <div class="logo">
+            TeamUp<span class="highlight">.gg</span>
+        </div>
+
+     
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="comment_ca_marche.html">Comment ça marche</a></li>
+                <li><a href="profils.html">Joueurs</a></li>
+                <li><a href="annonces.html" aria-current="page">Annonces</a></li>
+                <li><a href="top.html">Top</a></li>
+            </ul>
+        </nav>
+        
+        <a href="#" class="btn-login" role="button">Connexion</a>
+    </header>
+
+    <main>
+        
+        <section class="section">
+            <div class="container">
+                <h1 class="section-title">Créer une annonce</h1>
+                <p class="text-center" style="color: var(--gray-light); font-size: 1.1rem;">
+                    Publie ton annonce pour recruter des joueurs ou trouver une équipe qui te correspond
+                </p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="form-container">
+                    <form>
+                       
+                        <div class="form-group">
+                            <label for="announcement-type" class="form-label">
+                                <i class="fas fa-tag" aria-hidden="true"></i>
+                                Type d'annonce
+                            </label>
+                            <select id="announcement-type" class="form-select" required>
+                                <option value="">Sélectionne le type d'annonce</option>
+                                <option value="recruitment">Recruter des joueurs</option>
+                                <option value="looking-for-team">Chercher une équipe</option>
+                            </select>
+                        </div>
+
+                       
+                        <div class="form-group">
+                            <label for="game" class="form-label">
+                                <i class="fas fa-gamepad" aria-hidden="true"></i>
+                                Jeu
+                            </label>
+                            <select id="game" class="form-select" required>
+                                <option value="">Sélectionne un jeu</option>
+                                <option value="valorant">Valorant</option>
+                                <option value="lol">League of Legends</option>
+                                <option value="cs2">Counter-Strike 2</option>
+                                <option value="ow2">Overwatch 2</option>
+                                <option value="rl">Rocket League</option>
+                                <option value="r6">Rainbow Six Siege</option>
+                            </select>
+                        </div>
+
+                    
+                        <div class="form-group">
+                            <label for="title" class="form-label">
+                                <i class="fas fa-heading" aria-hidden="true"></i>
+                                Titre de l'annonce
+                            </label>
+                            <input type="text" id="title" class="form-input" placeholder="Ex: Équipe Diamant cherche Support" required>
+                        </div>
+
+                       
+                        <div class="form-group">
+                            <label for="rank" class="form-label">
+                                <i class="fas fa-trophy" aria-hidden="true"></i>
+                                Niveau requis
+                            </label>
+                            <select id="rank" class="form-select" required>
+                                <option value="">Sélectionne le niveau</option>
+                                <option value="iron">Fer</option>
+                                <option value="bronze">Bronze</option>
+                                <option value="silver">Argent</option>
+                                <option value="gold">Or</option>
+                                <option value="platinum">Platine</option>
+                                <option value="diamond">Diamant</option>
+                                <option value="immortal">Immortal</option>
+                                <option value="radiant">Radiant</option>
+                            </select>
+                        </div>
+
+                       
+                        <div class="form-group">
+                            <label for="role" class="form-label">
+                                <i class="fas fa-user-friends" aria-hidden="true"></i>
+                                Rôle recherché
+                            </label>
+                            <select id="role" class="form-select">
+                                <option value="">Tous les rôles</option>
+                                <option value="duelist">Duelist</option>
+                                <option value="initiator">Initiator</option>
+                                <option value="controller">Controller</option>
+                                <option value="sentinel">Sentinel</option>
+                                <option value="top">Top</option>
+                                <option value="jungle">Jungle</option>
+                                <option value="mid">Mid</option>
+                                <option value="adc">ADC</option>
+                                <option value="support">Support</option>
+                            </select>
+                        </div>
+
+                        
+                        <div class="form-group">
+                            <label for="description" class="form-label">
+                                <i class="fas fa-align-left" aria-hidden="true"></i>
+                                Description
+                            </label>
+                            <textarea id="description" class="form-textarea" placeholder="Décris ton équipe, tes objectifs, tes disponibilités..." required></textarea>
+                        </div>
+
+                       
+                        <div class="form-group">
+                            <label for="availability" class="form-label">
+                                <i class="fas fa-clock" aria-hidden="true"></i>
+                                Disponibilités
+                            </label>
+                            <input type="text" id="availability" class="form-input" placeholder="Ex: Soirs de semaine, weekends">
+                        </div>
+
+                       
+                        <div class="form-group">
+                            <label for="contact" class="form-label">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                                Contact (Discord, Steam, etc.)
+                            </label>
+                            <input type="text" id="contact" class="form-input" placeholder="Ex: Discord#2002" required>
+                        </div>
+
+                        
+                        <div style="text-align: center; margin-top: var(--spacing-xl);">
+                            <button type="submit" class="btn btn-primary btn-large">
+                                <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                                Publier l'annonce
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+               
+                <div class="footer-section">
+                    <div class="logo">
+                        TeamUp<span class="highlight">.gg</span>
+                    </div>
+                    <p>
+                        La plateforme E-sport qui connecte les joueurs et les équipes 
+                        du monde entier.
+                    </p>
+                    
+                    
+                    <div class="social-links">
+                        <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Twitch"><i class="fab fa-twitch"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+              
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="profils.html">Joueurs</a></li>
+                        <li><a href="annonces.html">Annonces</a></li>
+                        <li><a href="top.html">Top</a></li>
+                    </ul>
+                </div>
+
+             
+                <div class="footer-section">
+                    <h4>Légal</h4>
+                    <ul>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">CGU</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+           
+            <div class="footer-bottom">
+                <p>
+                    &copy; 2025 TeamUp.gg. Tous droits réservés. 
+                    Tayeb SOUINI, Formateur Référent Youcoude Youssoufia
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
