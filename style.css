@@ -618,3 +618,9 @@ p {
     border-top: 1px solid rgba(0, 255, 255, 0.2);
     color: var(--gray-light);
 }
+
+.annoncebtn{
+text-align: center;
+margin-top: var(--spacing-xl);
+
+}
