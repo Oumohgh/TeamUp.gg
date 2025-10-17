@@ -34,8 +34,7 @@
         <a href="#" class="btn-login" role="button">Connexion</a>
     </header>
 
-   
-    <main>
+       <main>
         <section class="hero">
             <div class="hero-content">
                 <h1>
@@ -53,7 +52,48 @@
             </div>
         </section>
 
-       
+       <div class="search-card">
+                <h2 class="search-title">Recherche ton équipe idéale</h2>
+                <form class="search-form">
+                    <div class="form-group">
+                        <label for="game">Jeu</label>
+                        <select id="game" class="form-control">
+                            <option value="">Sélectionne un jeu</option>
+                            <option value="valorant">Valorant</option>
+                            <option value="lol">League of Legends</option>
+                            <option value="cs2">Counter-Strike 2</option>
+                            <option value="overwatch">Overwatch 2</option>
+                            <option value="apex">Apex Legends</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="rank">Niveau</label>
+                        <select id="rank" class="form-control">
+                            <option value="">Tous les niveaux</option>
+                            <option value="bronze">Bronze</option>
+                            <option value="silver">Argent</option>
+                            <option value="gold">Or</option>
+                            <option value="platinum">Platine</option>
+                            <option value="diamond">Diamant</option>
+                            <option value="master">Maître</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="role">Rôle</label>
+                        <select id="role" class="form-control">
+                            <option value="">Tous les rôles</option>
+                            <option value="duelist">Duelliste</option>
+                            <option value="controller">Contrôleur</option>
+                            <option value="sentinel">Sentinelle</option>
+                            <option value="initiator">Initiateur</option>
+                            <option value="support">Support</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-search">Rechercher</button>
+                </form>
+            </div>
+        </div>
+    </section>
         <section id="how-it-works" class="section how-it-works">
             <div class="container">
                 <h2 class="section-title">Comment ça marche ?</h2>
@@ -141,7 +181,7 @@
                 </div>
             </div>
         </section>
-
+ 
       
         <section class="section stats-section">
             <div class="container">
