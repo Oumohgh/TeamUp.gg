@@ -758,3 +758,56 @@ search-section {
   color: #b0b0b0;
   line-height: 1.8;
 }
+.second_title {
+    display: flex;
+    justify-content: center;
+    margin: 40px auto 32px auto;
+    text-align: center;
+    color: white;
+}
+
+.content_box {
+    margin: 31px 33px 61px 31px;
+}
+
+#paragraph {
+    line-height: 28px;
+    font-style: italic;
+    color: #E0E0E0;
+    margin-bottom: 24px;
+}
+
+.second_span {
+    font-weight: bold;
+    font-size: 15.3px;
+    color: #00FFFF;
+    width: 299.33px;
+    height: 26px;
+    line-height: 25.6px;
+    margin-left: 12px;
+    margin-top: 20px;
+}
+
+.therd_span {
+    color: #888888;
+    line-height: 23px;
+    margin-left: 12px;
+}
+
+.nous_box {
+    border: solid 0.5px #00ffff82;
+    border-radius: 16px;
+    width: 365.33px;
+    height: 257.2px;
+    display: flex;
+    justify-content: center;
+}
+
+.nous {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    gap: 30px;
+}
